@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNEST</title>
+    <link rel="icon" href="">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap css -->
+    <!-- <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="head">
+                <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+                <div class="links">
+                    <button style="color: #00bfa6;" onclick="location.href='../html/index.html'">Home</button>
+                    <button onclick="location.href='../html/about.html'">About</button>
+                    <button onclick="location.href='../html/services.html'">Services</button>
+                    <button onclick="location.href='../html/blog.html'">Blog</button>
+                    <button>Contact</button>
+                </div>
+                <div class="contact">
+                    <button style="color: #00bfa6;" onclick="openPopup()">Contact</button>
+                </div>
+            </div>
+            <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+                <div class="popup" onclick="event.stopPropagation()">
+                <h2 style="font-size: 45px;margin-bottom: 20px;">Contact</h2>
+                <form action="">
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">email</label><br>
+                    <input type="email"><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="2" rows="2"></textarea><br>
+                    <input type="submit" class="send" value="send" style="background-color: #00bfa6;font-size: 20px;font-weight: 700;">
+                </form>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div><!-- header end -->
+
+
+        <section class="projects">
+            <div class="projects-header">
+                <h2>Our Projects</h2>
+                <p>Explore some of the amazing projects we’ve worked on. Click on any project to learn more!</p>
+            </div>
+        
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 1</h3>
+                        <p>Short description of the project. It includes the features and technologies used in the development.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 2</h3>
+                        <p>A brief overview of the second project. Highlight the main objectives and the outcome.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 3</h3>
+                        <p>Description of the third project, detailing the challenges overcome and the technology stack used.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project4.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 4</h3>
+                        <p>Short summary of the project with information on the features and impact of the project.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project5.jpg" alt="Project 5">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 5</h3>
+                        <p>Highlights of the project's success, features, and design implementation.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project6.jpg" alt="Project 6">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 6</h3>
+                        <p>Key information about the project, explaining how it was executed and the technology used.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project7.jpg" alt="Project 7">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 7</h3>
+                        <p>Description of the project with insights into the client's needs and the solution we delivered.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project8.jpg" alt="Project 8">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 8</h3>
+                        <p>Brief overview of the project scope and how we met client expectations.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project9.jpg" alt="Project 9">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 9</h3>
+                        <p>Short summary of the project's objectives and technologies used in development.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 10 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project10.jpg" alt="Project 10">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 10</h3>
+                        <p>Description of the project's results, emphasizing its impact on users and stakeholders.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 11 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project11.jpg" alt="Project 11">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 11</h3>
+                        <p>Details on how the project was executed with focus on key features and client feedback.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 12 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project12.jpg" alt="Project 12">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 12</h3>
+                        <p>Overview of the project with a focus on its strategic implementation and outcomes.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 13 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project13.jpg" alt="Project 13">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 13</h3>
+                        <p>Insight into the development process and the solutions provided through the project.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 14 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project14.jpg" alt="Project 14">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 14</h3>
+                        <p>Description of the project's goals, technical approach, and key deliverables.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 15 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project15.jpg" alt="Project 15">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 15</h3>
+                        <p>Highlights of the successful delivery of this project and its lasting impact.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 16 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project16.jpg" alt="Project 16">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 16</h3>
+                        <p>Details of the project and how it surpassed initial expectations and goals.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 17 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project17.jpg" alt="Project 17">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 17</h3>
+                        <p>Information about the project's design, objectives, and implementation steps.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 18 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project18.jpg" alt="Project 18">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 18</h3>
+                        <p>Description of the key challenges faced during the project's development.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 19 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project19.jpg" alt="Project 19">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 19</h3>
+                        <p>Overview of the project's success and its implementation.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 20 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project20.jpg" alt="Project 20">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 20</h3>
+                        <p>Summary of the project's completion, technology used, and final results.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 20 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project20.jpg" alt="Project 20">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title 21</h3>
+                        <p>Summary of the project's completion, technology used, and final results.</p>
+                        <a href="project-detail.html" class="view-project">View Project</a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/services.html">Services</a></li>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                    <li><a href="../html/projects.html">Projects</a></li>
+                </ul>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Social Media</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul>
+                    <li>+2010*******</li>
+                    <li>example@example.com</li>
+                </ul>
+                </div>
+            </div>
+            </footer>
+        </div>
+        
+        
+
+
+
+
+
+    </div><!-- container end -->
+
+
+
+
+    <script>
+        function openPopup() {
+        document.getElementById("popupOverlay").style.display = "flex";
+        }
+    
+        function closePopup(event) {
+        document.getElementById("popupOverlay").style.display = "none";
+        }
+    </script>
+    <!-- bootstrap js -->
+    <!-- <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <!-- js -->
+    <!-- <script src="/assets/js/script.js"></script> -->
+</body>
+</html>

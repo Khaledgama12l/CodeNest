@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNEST</title>
+    <link rel="icon" href="">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap css -->
+    <!-- <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="head">
+                <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+                <div class="links">
+                    <button style="color: #00bfa6;" onclick="location.href='../html/index.html'">Home</button>
+                    <button onclick="location.href='../html/about.html'">About</button>
+                    <button onclick="location.href='../html/services.html'">Services</button>
+                    <button onclick="location.href='../html/blog.html'">Blog</button>
+                    <button>Contact</button>
+                </div>
+                <div class="contact">
+                    <button style="color: #00bfa6;" onclick="openPopup()">Contact</button>
+                </div>
+            </div>
+            <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+                <div class="popup" onclick="event.stopPropagation()">
+                <h2 style="font-size: 45px;margin-bottom: 20px;">Contact</h2>
+                <form action="">
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">email</label><br>
+                    <input type="email"><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="2" rows="2"></textarea><br>
+                    <input type="submit" class="send" value="send" style="background-color: #00bfa6;font-size: 20px;font-weight: 700;">
+                </form>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div><!-- header end -->
+        <div class="home"><!-- home start -->
+            <div class="part-one">
+                <div class="part-one-text">
+                    <p class="p-one">
+                        Building the Future
+                        of the Web, One 
+                        Line at a Time
+                    </p>
+                    <p class="p-two">
+                        We provide professional web development
+                        swrvices to bring your ideas to life
+                    </p>
+                    <button onclick="location.href='#our-services'">Our Services</button>
+                    <button onclick="location.href='#projects'" style="background-color: #2c2c2c;color: white;">View Projects</button>
+                </div>
+                <!-- <div class="part-one-img"><img style="    margin-left: 170px;" src="../assets/images/image.png" alt=""></div> -->
+            </div>
+            <div class="part-two"> 
+                <h2>What we Do</h2>
+                <div class="conta">
+                    <div class="fr" id="what" >
+                        <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="title"><span>W</span>ebsite Design</div>
+                        <button class="lern">Learn more</button>
+
+                        <!-- <div class="disc">Crafting Visually appelling and user firendly website designs</div> -->
+                    </div>
+                    <div class="sec" id="what">
+                        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="title"><span>F</span>rontEnd Development</span></div>
+                        <button class="lern">Learn more</button>
+                    </div>
+                    <div class="thr" id="what">
+                        <div class="icon"><i class="fa-solid fa-server"></i></div>
+                        <div class="title"><span>B</span>ackEnd Development</div>
+                        <button class="lern">Learn more</button>
+                    </div>
+                    <div class="fur" id="what">
+                        <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="title"><span>P</span>erformance Optimization</div>
+                        <button class="lern">Learn more</button>
+
+                        <!-- <div class="disc">Crafting Visually appelling and user firendly website designs</div> -->
+                    </div>
+                </div>
+            </div> 
+            
+        </div><!-- home end -->
+        <div class="our-services" id="our-services"><!-- our-services start -->
+            <div class="text">
+                <h2>Our Services</h2>
+                <h4>We offer a range of web development services to meet your needs </h4>
+            </div>
+            <div class="cont">
+                <div class="one" id="disc">
+                    <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+                    <div class="title"><span>W</span>ebsite Design</div>
+                    <div class="disc">Crafting Visually appelling and user firendly website designs</div>
+                </div>
+                <div class="two" id="disc">
+                    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="title"><span>F</span>rontEnd Development</span></div>
+                    <div class="disc">Building responsive ad interactive user interfaces </div>
+                </div>
+                <div class="three" id="disc">
+                    <div class="icon"><i class="fa-solid fa-server"></i></div>
+                    <div class="title"><span>B</span>ackEnd Development</div>
+                    <div class="disc">Develoing robust server-side applications and APIs</div>
+                </div>
+                <div class="four" id="disc">
+                    <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <div class="title"><span>P</span>erformance Optimization</div>
+                    <div class="disc">Enhancing website oformance and loading times</div>
+                </div>
+            </div>
+            <button class="view" onclick="location.href='../html/services.html'"><i class="fa-solid fa-blog"></i> Request a service</button>
+
+        </div><!-- our-services end -->
+        <div class="blog" id="blog"><!-- blog start -->
+            <div class="text">
+                <h2>blog</h2>
+                <h4>We offer a range of web development services to meet your needs </h4>
+            </div>
+            <div class="cont">
+                
+                <div class="blog-news" id="what"><a href="#" target="_blank">
+                    <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <div class="title"><span>T</span>he Lastest Trends in CSS</div>
+                    <div class="disc">Exploring new feature and technuquess in CSS</div>
+                    <div class="date">1,Jan2009</div></a>
+                </a>
+                </div>
+                <div class="blog-news" id="what"><a href="#" target="_blank">
+                    <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <div class="title"><span>R</span>eact vs. Vue A Comparison</div>
+                    <div class="disc"> Comparing two populer JavaScript frameworks</div>
+                    <div class="date">17,March2024</div></a>
+                </a>
+                </div>
+                <div class="blog-news" id="what"><a href="#" target="_blank">
+                    <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <div class="title"><span>R</span>esponsive Web Design Tips</div>
+                    <div class="disc">Best practitces for creating responsive websites</div>
+                    <div class="date">5,March2021</div></a>
+                </div>
+                <button class="view" onclick="location.href='../html/blog.html'"><i class="fa-solid fa-blog"></i> Read our blog</button>
+                </div>
+            </div><!-- blog end -->
+            <div class="projects" id="projects"><!-- projects start -->
+                <div class="text">
+                    <h2>Projects</h2>
+                    <h4>Our recent work</h4>
+                </div>
+                <div class="cont">
+                    
+                    <div class="one" id="disc" ><a href="#" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="title"><span>P</span>roject title</div>
+                        <div class="disc">A brief description of the project</div></a>
+                    </div>
+                    <div class="two" id="disc"><a href="#" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="title"><span>P</span>roject title</div>
+                        <div class="disc">A brief description of the project</div></a>
+                    </div>
+                    <div class="three" id="disc"><a href="#" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="title"><span>P</span>roject title</div>
+                        <div class="disc">A brief description of the project</div></a>
+                    </div>
+                    <div class="four" id="disc"><a href="#" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="title"><span>P</span>roject title</div>
+                        <div class="disc">A brief description of the project</div></a>
+                    </div>
+                <button class="view" onclick="location.href='../html/projects.html'"><i class="fa-solid fa-diagram-project"></i> View All Projects</button>
+                </div>
+            </div><!-- projects end -->
+            <footer class="footer">
+<div class="footer-container">
+    <div class="footer-column">
+        <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+    </div>
+    <div class="footer-column">
+    <h3 class="footer-heading">Quick Links</h3>
+    <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/services.html">Services</a></li>
+        <li><a href="../html/blog.html">Blog</a></li>
+        <li><a href="../html/projects.html">Projects</a></li>
+    </ul>
+    </div>
+    <div class="footer-column">
+    <h3 class="footer-heading">Social Media</h3>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+    </ul>
+    </div>
+    <div class="footer-column">
+    <h3 class="footer-heading">Contact Info</h3>
+    <ul>
+        <li>+2010*******</li>
+        <li>example@example.com</li>
+    </ul>
+    </div>
+</div>
+</footer>
+        </div>
+        
+        
+
+
+
+
+
+    </div><!-- container end -->
+
+
+
+
+    <script>
+        function openPopup() {
+        document.getElementById("popupOverlay").style.display = "flex";
+        }
+    
+        function closePopup(event) {
+        document.getElementById("popupOverlay").style.display = "none";
+        }
+    </script>
+    <!-- bootstrap js -->
+    <!-- <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <!-- js -->
+    <!-- <script src="/assets/js/script.js"></script> -->
+</body>
+</html>

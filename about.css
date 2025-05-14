@@ -1,0 +1,54 @@
+.about-section {
+    padding: 100px 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #ccc;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.about-card {
+    flex: 1 1 250px;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #ccc;
+}

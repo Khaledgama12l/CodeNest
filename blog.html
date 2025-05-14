@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNEST</title>
+    <link rel="icon" href="">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap css -->
+    <!-- <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="head">
+                <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+                <div class="links">
+                    <button style="color: #00bfa6;" onclick="location.href='../html/index.html'">Home</button>
+                    <button onclick="location.href='../html/about.html'">About</button>
+                    <button onclick="location.href='../html/services.html'">Services</button>
+                    <button onclick="location.href='../html/blog.html'">Blog</button>
+                    <button>Contact</button>
+                </div>
+                <div class="contact">
+                    <button style="color: #00bfa6;" onclick="openPopup()">Contact</button>
+                </div>
+            </div>
+            <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+                <div class="popup" onclick="event.stopPropagation()">
+                <h2 style="font-size: 45px;margin-bottom: 20px;">Contact</h2>
+                <form action="">
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">email</label><br>
+                    <input type="email"><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="2" rows="2"></textarea><br>
+                    <input type="submit" class="send" value="send" style="background-color: #00bfa6;font-size: 20px;font-weight: 700;">
+                </form>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div><!-- header end -->
+
+
+        <section class="blog">
+            <div class="blog-header">
+                <h2>Our Blog</h2>
+                <p>Stay updated with the latest articles, tips, and news in the world of web development and technology.</p>
+            </div>
+        
+            <div class="blog-posts">
+                <!-- Post 1 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image1.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>How to Create a Stunning Website</h3>
+                        <p>Learn the best practices for building websites that are both beautiful and functional. In this article, we will explore...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+                <!-- Post 2 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image2.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>SEO Tips for 2025</h3>
+                        <p>SEO is always evolving. Stay ahead of the competition with these essential SEO strategies for 2025...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+                <!-- Post 3 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image3.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>Design Trends to Watch Out For</h3>
+                        <p>In 2025, we expect to see new trends emerging in design. From minimalism to bold typography, discover the design trends you can't ignore...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+                <!-- Post 4 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image4.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>Best Tools for Web Development in 2025</h3>
+                        <p>Discover the best tools that will help you build websites more efficiently and effectively in 2025...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+                <!-- Post 5 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image5.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>Responsive Design: Why It Matters</h3>
+                        <p>Why responsive design is essential and how to ensure your website looks great on all devices...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+                <!-- Post 6 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="image6.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>Web Accessibility: Making Your Website Inclusive</h3>
+                        <p>Improve your website's accessibility for everyone, including users with disabilities. Learn how to make your website inclusive...</p>
+                        <a href="blog-detail.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Optional: Subscription Form -->
+            <div class="blog-subscribe">
+                <h3>Subscribe to Our Blog</h3>
+                <p>Get the latest posts delivered right to your inbox.</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        
+
+
+
+
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="name"><a href="../html/index.html"><span>C</span>odeNest</a></div>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/services.html">Services</a></li>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                    <li><a href="../html/projects.html">Projects</a></li>
+                </ul>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Social Media</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul>
+                    <li>+2010*******</li>
+                    <li>example@example.com</li>
+                </ul>
+                </div>
+            </div>
+            </footer>
+        </div>
+        
+        
+
+
+
+
+
+    </div><!-- container end -->
+
+
+
+
+    <script>
+        function openPopup() {
+        document.getElementById("popupOverlay").style.display = "flex";
+        }
+    
+        function closePopup(event) {
+        document.getElementById("popupOverlay").style.display = "none";
+        }
+    </script>
+    <!-- bootstrap js -->
+    <!-- <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <!-- js -->
+    <!-- <script src="/assets/js/script.js"></script> -->
+</body>
+</html>
