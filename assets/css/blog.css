@@ -1,0 +1,206 @@
+.blog {
+  background-color: #121212;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* ====== Header ====== */
+.blog-header h2 {
+  font-size: 3rem;
+  color: #00bfa6;
+  transition: all 0.3s ease;
+}
+
+.blog-header h2:hover {
+  letter-spacing: 1px;
+}
+
+.blog-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 40px;
+  transition: color 0.3s ease;
+}
+
+.blog-header p:hover {
+  color: #fff;
+}
+
+/* ====== Blog Cards ====== */
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-post {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-post:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 191, 166, 0.25);
+}
+
+/* ====== Image ====== */
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.blog-post:hover .post-image img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ====== Text ====== */
+.post-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.post-content h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 15px 0;
+  transition: color 0.3s ease;
+}
+
+.post-content h3:hover {
+  color: #00bfa6;
+}
+
+.post-content p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* ====== Read More Button ====== */
+.read-more {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00bfa6, #008c7a);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.read-more:hover {
+  background: linear-gradient(90deg, #00e1c0, #00bfa6);
+  transform: translateY(-2px);
+}
+
+/* ====== Subscribe Section ====== */
+.blog-subscribe {
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  padding: 50px 20px;
+  margin-top: 60px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.blog-subscribe:hover {
+  box-shadow: 0 0 30px rgba(0, 191, 166, 0.15);
+}
+
+.blog-subscribe h3 {
+  font-size: 2rem;
+  color: #00bfa6;
+  margin-bottom: 20px;
+}
+
+.blog-subscribe p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.blog-subscribe form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blog-subscribe input {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  width: 260px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+
+.blog-subscribe button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #00bfa6, #008c7a);
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.blog-subscribe button:hover {
+  background: linear-gradient(90deg, #00e1c0, #00bfa6);
+  transform: translateY(-2px);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 1024px) {
+  .blog-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .blog-subscribe h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header h2 {
+    font-size: 2rem;
+  }
+
+  .blog-subscribe input {
+    width: 100%;
+  }
+}

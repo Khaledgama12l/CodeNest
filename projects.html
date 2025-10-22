@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeNest | Projects</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- 🔗 ربط ملفات الـ CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="head">
+    <div class="name">
+      <a href="../index.html"><span>C</span>odeNest</a>
+    </div>
+
+   <nav class="links">
+          <button class="active" onclick="location.href='index.html'">Home</button>
+          <button onclick="location.href='about.html'">About</button>
+          <button onclick="location.href='services.html'">Services</button>
+          <button onclick="location.href='blog.html'">Blog</button>
+        </nav>
+
+    <div class="contact">
+      <button  onclick="openPopup()">Contact</button>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT POPUP ===== -->
+  <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+    <div class="popup" onclick="event.stopPropagation()">
+      <h2>Contact</h2>
+      <form action="">
+        <label>Name</label><br />
+        <input type="text" required /><br />
+        <label>Email</label><br />
+        <input type="email" required /><br />
+        <label>Message</label><br />
+        <textarea rows="3" required></textarea><br />
+        <input
+          type="submit"
+          class="send"
+          value="Send"
+          style="background-color: #00bfa6; font-weight: 700"
+        />
+      </form>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+</header>
+
+
+      <!-- ===== CONTACT POPUP ===== -->
+      <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+        <div class="popup" onclick="event.stopPropagation()">
+          <h2>Contact</h2>
+          <form action="">
+            <label>Name</label><br />
+            <input type="text" required /><br />
+            <label>Email</label><br />
+            <input type="email" required /><br />
+            <label>Message</label><br />
+            <textarea rows="3" required></textarea><br />
+            <input
+              type="submit"
+              class="send"
+              value="Send"
+              style="background-color: #00bfa6; font-weight: 700"
+            />
+          </form>
+          <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects">
+      <div class="projects-header">
+        <h2>Our Projects</h2>
+        <p>
+          Explore some of the amazing projects we’ve worked on. Click any project
+          to learn more!
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project Card Example -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../assets/images/project1.jpg" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3>Project Title 1</h3>
+            <p>
+              Short description of the project highlighting its goals, technologies,
+              and results achieved.
+            </p>
+            <a href="project-detail.html" class="view-project">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../assets/images/project2.jpg" alt="Project 2" />
+          </div>
+          <div class="project-content">
+            <h3>Project Title 2</h3>
+            <p>
+              Brief description showcasing how the project was executed and the
+              value delivered.
+            </p>
+            <a href="project-detail.html" class="view-project">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../assets/images/project3.jpg" alt="Project 3" />
+          </div>
+          <div class="project-content">
+            <h3>Project Title 3</h3>
+            <p>
+              A concise summary explaining the objectives and technologies used.
+            </p>
+            <a href="project-detail.html" class="view-project">View Project</a>
+          </div>
+        </div>
+
+        <!-- يمكنك نسخ الكروت حسب عدد المشاريع -->
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="name">
+            <a href="../index.html"><span>C</span>odeNest</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Social Media</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Info</h3>
+          <ul>
+            <li>+2010*******</li>
+            <li>example@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Buttons -->
+    <button id="up" class="btn">⬆️</button>
+    <button id="down" class="btn">⬇️</button>
+  </div>
+
+  <!-- JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

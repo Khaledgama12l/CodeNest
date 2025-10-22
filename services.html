@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | CodeNest</title>
+  <link rel="icon" href="">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="head">
+        <div class="name"><a href="index.html"><span>C</span>odeNest</a></div>
+
+        <nav class="links">
+          <button onclick="location.href='index.html'">Home</button>
+          <button onclick="location.href='about.html'">About</button>
+          <button class="active" onclick="location.href='services.html'">Services</button>
+          <button onclick="location.href='blog.html'">Blog</button>
+        </nav>
+
+        <div class="contact">
+          <button onclick="openPopup()">Contact</button>
+        </div>
+      </div>
+
+      <!-- ===== Contact Popup ===== -->
+      <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+        <div class="popup" onclick="event.stopPropagation()">
+          <h2>Contact</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="3" required></textarea>
+
+            <input type="submit" class="send" value="Send" />
+          </form>
+          <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Services Section ===== -->
+    <section class="services" style="margin-top: 120px; text-align: center;">
+      <div class="services-header">
+        <h1 style="color: var(--primary); font-size: 40px;">Our Services</h1>
+        <p style="max-width: 700px; margin: 20px auto; color: #ccc;">
+          We offer high-quality web development services that meet your business needs.
+        </p>
+      </div>
+
+      <div class="services-cards cont">
+        <div class="service-card" id="what">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <div class="title"><span>W</span>eb Development</div>
+          <div class="disc">We create responsive and dynamic websites that boost your online presence.</div>
+          <button class="view">Learn More</button>
+        </div>
+
+        <div class="service-card" id="what">
+          <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <div class="title"><span>U</span>I/UX Design</div>
+          <div class="disc">We design intuitive and user-friendly interfaces for better user experiences.</div>
+          <button class="view">Learn More</button>
+        </div>
+
+        <div class="service-card" id="what">
+          <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="title"><span>S</span>EO Optimization</div>
+          <div class="disc">We optimize your website to rank higher on search engines and drive more traffic.</div>
+          <button class="view">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="name"><a href="index.html"><span>C</span>odeNest</a></div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Social Media</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Info</h3>
+          <ul>
+            <li>+2010*******</li>
+            <li>example@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Buttons -->
+    <button id="up" class="btn">⬆️</button>
+    <button id="down" class="btn">⬇️</button>
+
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

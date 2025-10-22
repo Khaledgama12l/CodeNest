@@ -1,0 +1,925 @@
+/* =======================================================
+🌐 CodeNest | Full Responsive & Unified Style CSS
+======================================================= */
+
+/* 🎨 الألوان العامة */
+:root {
+  --back-color: #121212;
+  --back-color2: black;
+  --color: #ffffff;
+  --primary: #00bfa6;
+  --secondary: #1f1f1f6a;
+  --secondary2: #2c2c2c;
+}
+
+/* =======================================================
+🧱 الإعدادات الأساسية
+======================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  background-color: var(--back-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =======================================================
+📦 الحاوية العامة
+======================================================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+/* =======================================================
+🔝 الهيدر
+======================================================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--back-color2);
+  border-bottom: 1px solid #222;
+  padding: 10px 5%;
+  z-index: 100;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.name span {
+  color: var(--primary);
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.links button:hover,
+.links button.active {
+  color: var(--primary);
+}
+
+.contact button {
+  background-color: var(--primary);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* =======================================================
+🏠 الصفحة الرئيسية
+======================================================= */
+.home {
+  margin-top: 120px;
+}
+
+.part-one {
+  background: url("../images/web.jpg") center/cover no-repeat;
+  border-radius: 10px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.part-one:hover {
+  border: 2px solid var(--primary);
+}
+
+.part-one-text .p-one {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.part-one-text .p-two {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.part-one-text button {
+  background-color: var(--primary);
+  border: none;
+  color: black;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.part-one-text button.outline {
+  background-color: var(--secondary2);
+  color: white;
+}
+
+.part-one-text button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* =======================================================
+💼 ما نقدمه
+======================================================= */
+.part-two {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.part-two h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.conta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid var(--primary);
+}
+
+.service-card .icon {
+  background-color: var(--secondary2);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-card .icon i {
+  font-size: 26px;
+  color: var(--primary);
+}
+
+.service-card .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card .lern {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* =======================================================
+🧰 الخدمات / المشاريع / المدونة
+======================================================= */
+.our-services,
+.blog,
+.projects {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.text h4 {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.project-card,
+.blog-news {
+  background-color: var(--secondary);
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.card:hover,
+.project-card:hover,
+.blog-news:hover {
+  border: 2px solid var(--primary);
+  transform: translateY(-5px);
+}
+
+.icon {
+  background-color: var(--secondary2);
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon i {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title span {
+  color: var(--primary);
+}
+
+.disc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.view {
+  background-color: var(--secondary2);
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view:hover {
+  background-color: var(--primary);
+  color: black;
+}
+
+/* =======================================================
+📩 Popup (Contact)
+======================================================= */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px #000;
+  text-align: left;
+}
+
+.popup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup form label {
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.popup input,
+.popup textarea {
+  width: 100%;
+  background: var(--back-color);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  margin: 8px 0 15px;
+  padding: 8px;
+  color: white;
+}
+
+.popup .send {
+  background-color: var(--primary);
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn {
+  display: block;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* =======================================================
+⚙️ الفوتر
+======================================================= */
+.footer {
+  background-color: #0e0e0e;
+  padding: 40px 20px;
+  margin-top: 100px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--primary);
+}
+
+/* =======================================================
+⬆️⬇️ أزرار التمرير
+======================================================= */
+.btn {
+  width: 35px;
+  height: 35px;
+  background-color: var(--primary);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#up {
+  bottom: 70px;
+  display: none;
+}
+
+/* =======================================================
+🌟 Project Cards – Polished Look
+======================================================= */
+.projects .cont .one,
+.projects .cont .two,
+.projects .cont .three,
+.projects .cont .four {
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projects .cont .one:hover,
+.projects .cont .two:hover,
+.projects .cont .three:hover,
+.projects .cont .four:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 191, 166, 0.4);
+  border: 1px solid var(--primary);
+  background: linear-gradient(145deg, #232323, #1a1a1a);
+}
+
+.projects .cont .icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 191, 166, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.projects .cont .icon i {
+  font-size: 35px;
+  color: var(--primary);
+}
+
+.projects .cont .title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.projects .cont .disc {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* =======================================================
+✨ توحيد شكل جميع الكروت في الموقع
+======================================================= */
+#what,
+#disc,
+.projects .cont > div,
+.blog .cont > div,
+.our-services .cont > div {
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#what:hover,
+#disc:hover,
+.projects .cont > div:hover,
+.blog .cont > div:hover,
+.our-services .cont > div:hover {
+  background: linear-gradient(145deg, #232323, #1a1a1a);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 191, 166, 0.4);
+  border: 1px solid rgba(0, 191, 166, 0.5);
+}
+
+/* =======================================================
+🚀 أزرار موحدة في كل الموقع
+======================================================= */
+button.view,
+button.lern,
+button.send,
+.contact > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: linear-gradient(145deg, var(--primary), #00a891);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 191, 166, 0.4);
+  transition: all 0.3s ease;
+}
+
+button.view:hover,
+button.lern:hover,
+button.send:hover,
+.contact > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 191, 166, 0.8);
+  background: linear-gradient(145deg, #00a891, var(--primary));
+  color: #fff;
+}
+
+/* =======================================================
+📱 تصميم الريسبونسيف
+======================================================= */
+@media (max-width: 1024px) {
+  .links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .part-one {
+    text-align: center;
+    align-items: center;
+  }
+
+  .part-one-text {
+    width: 100%;
+  }
+
+  .part-one-text .p-one {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .part-one-text .p-one {
+    font-size: 22px;
+  }
+
+  .part-one-text .p-two {
+    font-size: 14px;
+  }
+
+  .links button {
+    font-size: 14px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Highlight النصوص */
+::selection {
+    background-color: var(--primary); /* لون البريمري */
+    color: black; /* لون النص عند التحديد */
+}
+.part-two {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.part-two h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.conta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2c);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 191, 166, 0.4);
+    border: 1px solid var(--primary);
+    background: linear-gradient(145deg, #232323, #1a1a1a);
+}
+
+.service-card .icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 191, 166, 0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.service-card .icon i {
+    font-size: 35px;
+    color: var(--primary);
+}
+
+.service-card .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-card .title span {
+    color: var(--primary);
+}
+
+button.lern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(145deg, var(--primary), #00a891);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 191, 166, 0.4);
+    transition: all 0.3s ease;
+}
+
+button.lern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 191, 166, 0.8);
+    background: linear-gradient(145deg, #00a891, var(--primary));
+    color: #fff;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* يوزع المحتوى بحيث الزر تحت */
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2c);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 191, 166, 0.4);
+    border: 1px solid var(--primary);
+    background: linear-gradient(145deg, #232323, #1a1a1a);
+}
+
+.service-card .icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 191, 166, 0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.service-card .icon i {
+    font-size: 35px;
+    color: var(--primary);
+}
+
+.service-card .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-card .title span {
+    color: var(--primary);
+}
+
+.service-card p {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button.lern {
+    align-self: center; /* يضمن الزر في وسط الكارت */
+    margin-top: auto; /* الزر دايمًا في أسفل الكارت */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(145deg, var(--primary), #00a891);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 191, 166, 0.4);
+    transition: all 0.3s ease;
+}
+
+button.lern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 191, 166, 0.8);
+    background: linear-gradient(145deg, #00a891, var(--primary));
+    color: #fff;
+}
+/* الهيدر الأساسي */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--back-color2);
+    border-bottom: 1px solid #222;
+    padding: 10px 5%;
+    z-index: 100;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.name span {
+    color: var(--primary);
+    text-shadow: 0 0 8px var(--primary), 0 0 15px var(--primary);
+}
+
+/* روابط الهيدر */
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+/* زر الموبايل */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--color);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name {
+        text-align: center;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+    }
+    .head{
+        height: 55px;
+    }
+
+    .links {
+        display: none; /* نختفي الروابط */
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* عرض زر الموبايل */
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    .contact{
+        display: none;
+    }
+
+    .links.active {
+        display: flex; /* تظهر الروابط عند الضغط */
+    }
+}
+
+/* زرار Contact */
+.links button {
+    background: none;
+    border: none;
+    color: var(--color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.links button:hover {
+    color: var(--primary);
+}
+.head {
+    display: flex;
+    justify-content: space-between; /* الاسم يسار، الهامبرجر يمين */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 10px #00bfa6, 0 0 20px #00bfa6;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .links {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;  /* تحت الهيدر */
+        right: 0;
+        background-color: #121212;
+        width: 200px;
+        padding: 20px;
+        display: none;
+        gap: 15px;
+        box-shadow: -2px 2px 15px rgba(0,0,0,0.5);
+        border-left: 1px solid #00bfa6;
+        z-index: 1000;
+    }
+
+    .links.active {
+        display: flex;
+    }
+}
