@@ -21,7 +21,7 @@
     <div class="header">
     <div class="head">
         <!-- اسم الموقع -->
-        <div class="name"><a href="index.html"><span>C</span>odeNest</a></div>
+        <div class="name"><a href="../index.html"><span>C</span>odeNest</a></div>
 
         <!-- زر الموبايل -->
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -37,6 +37,24 @@
         <button onclick="openPopup()">Contact</button>
         </div>
     </div>
+
+    <!-- بوب أب Contact -->
+    <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
+        <div class="popup" onclick="event.stopPropagation()">
+            <h2 style="font-size: 45px;margin-bottom: 20px;">Contact</h2>
+            <form>
+                <label for="">Name</label><br>
+                <input type="text"><br>
+                <label for="">Email</label><br>
+                <input type="email"><br>
+                <label for="">Message</label><br>
+                <textarea cols="2" rows="2"></textarea><br>
+                <input type="submit" class="send" value="Send" style="background-color: #00bfa6;font-size: 20px;font-weight: 700;">
+            </form>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+</div>
 
     <!-- بوب أب Contact -->
     <div class="overlay" id="popupOverlay" onclick="closePopup(event)">
